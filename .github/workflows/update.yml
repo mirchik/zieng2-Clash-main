@@ -528,7 +528,7 @@ jobs:
               
               # Сохраняем с мета-комментарием в начале файла
               now_utc = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')
-              header = f"# Обновлено: {now_utc}\n# Всего в источнике: {total_parsed}\n# Живых серверов: {alive_count}\n# Источник: 26.txt\n\n"
+              header = f"# Обновлено: {now_utc}\n# Всего в источнике: {total_parsed}\n# Живых серверов: {alive_count}\n\n"
               
               with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
                   f.write(header)
