@@ -1,13 +1,13 @@
-# Обновлено: 2026-09-30 16:40 UTC
-# Всего в источнике: 90
-# Живых серверов: 87
+# Обновлено: 2026-09-30 21:13 UTC
+# Всего в источнике: 98
+# Живых серверов: 98
 
 proxies:
-- name: '🇩🇪 Germany — #42'
+- name: '🇩🇪 Germany — #38'
   type: vless
   server: 91.215.43.80
   port: 443
-  uuid: 90cd15d3-26fa-4515-a67d-c76cc3659baf
+  uuid: e9db4b82-5bdb-4518-91f7-691c44e104b7
   udp: true
   skip-cert-verify: true
   encryption: none
@@ -18,7 +18,7 @@ proxies:
     path: /gateway/v1/ws/74c4d5e82a8e50ccf09fc628c17dc9be
     headers:
       Host: 91.215.43.80
-- name: '🇩🇪 Germany — #31'
+- name: '🇩🇪 Germany — #26'
   type: vless
   server: 78.159.247.188
   port: 10010
@@ -27,16 +27,32 @@ proxies:
   skip-cert-verify: true
   encryption: none
   sni: eh.vk.com
-- name: '🇩🇪 Germany — #32'
+- name: '🇩🇪 Germany — #47'
   type: vless
-  server: 78.159.247.188
-  port: 10010
-  uuid: 6a3c68b1-d4b8-4dff-975f-a01da4184225
+  server: 188.225.72.20
+  port: 443
+  uuid: 66bb404f-b01c-4f97-9f1b-3d546eebf289
   udp: true
   skip-cert-verify: true
   encryption: none
-  sni: eh.vk.com
-- name: '🇷🇺 Timeweb — #17'
+  tls: true
+  sni: ob3.floatingcars.net
+- name: '🇷🇺 VK — #7'
+  type: vless
+  server: 78.159.246.110
+  port: 443
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  tls: true
+  sni: fbsv6.guardora.pro
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: 78.159.246.110
+- name: '🇷🇺 Timeweb — #13'
   type: vless
   server: 185.141.227.180
   port: 2053
@@ -46,9 +62,27 @@ proxies:
   encryption: none
   tls: true
   sni: dismissaltree.net
-- name: '🇷🇺 VK — #9'
+- name: '🇩🇪 Germany — #42'
   type: vless
-  server: 217.19.122.200
+  server: 185.229.9.175
+  port: 443
+  uuid: e9db4b82-5bdb-4518-91f7-691c44e104b7
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: max.ru
+- name: '🇩🇪 Germany — #46'
+  type: vless
+  server: 185.229.9.175
+  port: 443
+  uuid: e9db4b82-5bdb-4518-91f7-691c44e104b7
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: www.vk.com
+- name: '🇷🇺 VK — #4'
+  type: vless
+  server: 78.159.246.110
   port: 443
   uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
   udp: true
@@ -61,34 +95,122 @@ proxies:
     path: /ws
     headers:
       Host: fbsv6.guardora.pro
-- name: '🇩🇪 Germany — #40'
+- name: '🇩🇪 Germany — #24'
   type: vless
-  server: 185.229.9.234
-  port: 443
-  uuid: 90cd15d3-26fa-4515-a67d-c76cc3659baf
+  server: 37.18.14.168
+  port: 10654
+  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
   udp: true
   skip-cert-verify: true
   encryption: none
-  sni: www.vk.com
-- name: '🇩🇪 Germany — #38'
+  sni: bl3fk52.sysopnova.art
+- name: '🇷🇺 VK — #5'
+  type: vless
+  server: 78.159.246.110
+  port: 443
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  tls: true
+  sni: fbsv6.guardora.pro
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: fbsv6.guardora.pro
+- name: '🇩🇪 Germany — #37'
   type: vless
   server: 185.229.9.234
   port: 443
-  uuid: 90cd15d3-26fa-4515-a67d-c76cc3659baf
+  uuid: e9db4b82-5bdb-4518-91f7-691c44e104b7
   udp: true
   skip-cert-verify: true
   encryption: none
   sni: yandex.ru
-- name: '🇩🇪 Germany — #50'
+- name: '🇩🇪 Germany — #25'
+  type: vless
+  server: 5.129.249.45
+  port: 9892
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: dl.google.com
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+- name: '🇩🇪 Germany — #39'
   type: vless
   server: 185.229.9.234
   port: 443
-  uuid: 90cd15d3-26fa-4515-a67d-c76cc3659baf
+  uuid: e9db4b82-5bdb-4518-91f7-691c44e104b7
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: max.ru
+- name: '🇷🇺 VK — #3'
+  type: vless
+  server: 78.159.246.110
+  port: 443
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  tls: true
+  sni: fbsv6.guardora.pro
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: 78.159.246.110
+- name: '🇩🇪 Germany — #34'
+  type: vless
+  server: 185.229.9.175
+  port: 443
+  uuid: e9db4b82-5bdb-4518-91f7-691c44e104b7
   udp: true
   skip-cert-verify: true
   encryption: none
   sni: api.ok.ru
-- name: '🇷🇺 VK — #2'
+- name: '🇩🇪 Germany — #48'
+  type: vless
+  server: 46.182.24.163
+  port: 443
+  uuid: 66bb404f-b01c-4f97-9f1b-3d546eebf289
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  tls: true
+  sni: slbs2.floatingcars.net
+- name: '🇩🇪 Germany — #40'
+  type: vless
+  server: 46.243.234.157
+  port: 7445
+  uuid: e9db4b82-5bdb-4518-91f7-691c44e104b7
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: passport.yandex.ru
+- name: '🇩🇪 Germany — #41'
+  type: vless
+  server: 31.177.111.114
+  port: 443
+  uuid: e9db4b82-5bdb-4518-91f7-691c44e104b7
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: yandex.ru
+- name: '🇨🇭 Switzerland — #22'
+  type: vless
+  server: 45.9.24.125
+  port: 8443
+  uuid: 9d1d244a-dd7b-4095-9705-714de1e95f0e
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: an9b3d-07.p.portshaper.com
+- name: '🇷🇺 VK — #1'
   type: vless
   server: 78.159.246.110
   port: 443
@@ -102,41 +224,18 @@ proxies:
   ws-opts:
     path: /ws
     headers:
-      Host: fbsv6.guardora.pro
-- name: '🇩🇪 Germany — #45'
+      Host: 78.159.246.110
+- name: '🇷🇺 Timeweb — #18'
   type: vless
-  server: 185.229.9.175
-  port: 443
-  uuid: 90cd15d3-26fa-4515-a67d-c76cc3659baf
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  sni: www.vk.com
-- name: '🇩🇪 Germany — #44'
-  type: vless
-  server: 91.240.87.166
-  port: 443
-  uuid: 90cd15d3-26fa-4515-a67d-c76cc3659baf
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  sni: www.vk.com
-- name: '🇷🇺 VK — #8'
-  type: vless
-  server: 78.159.246.110
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  server: 185.141.227.180
+  port: 2053
+  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
   udp: true
   skip-cert-verify: true
   encryption: none
   tls: true
-  sni: fbsv6.guardora.pro
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: fbsv6.guardora.pro
-- name: '🇷🇺 VK — #4'
+  sni: dismissaltree.net
+- name: '🇷🇺 VK — #6'
   type: vless
   server: 78.159.246.110
   port: 443
@@ -161,202 +260,16 @@ proxies:
   encryption: none
   tls: true
   sni: dismissaltree.net
-- name: '🇷🇺 Timeweb — #21'
-  type: vless
-  server: 185.141.227.180
-  port: 2053
-  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  tls: true
-  sni: dismissaltree.net
-- name: '🇩🇪 Germany — #47'
-  type: vless
-  server: 185.229.9.175
-  port: 443
-  uuid: 90cd15d3-26fa-4515-a67d-c76cc3659baf
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  sni: api.ok.ru
-- name: '🇷🇺 Timeweb — #15'
-  type: vless
-  server: 185.141.227.180
-  port: 2053
-  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  tls: true
-  sni: dismissaltree.net
-- name: '🇷🇺 VK — #7'
-  type: vless
-  server: 78.159.246.110
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  tls: true
-  sni: fbsv6.guardora.pro
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: 78.159.246.110
-- name: '🇩🇪 Germany — #33'
-  type: vless
-  server: 188.225.62.104
-  port: 443
-  uuid: e99e1143-5f31-4f91-b2bf-86a4a1d26ff1
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  sni: max.ru
-- name: '🇷🇺 VK — #6'
-  type: vless
-  server: 78.159.246.110
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  tls: true
-  sni: fbsv6.guardora.pro
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: fbsv6.guardora.pro
-- name: '🇩🇪 Germany — #29'
-  type: vless
-  server: 37.18.14.168
-  port: 10654
-  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  sni: bl3fk52.sysopnova.art
-- name: '🇩🇪 Germany — #46'
-  type: vless
-  server: 185.229.9.234
-  port: 443
-  uuid: 90cd15d3-26fa-4515-a67d-c76cc3659baf
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  sni: max.ru
-- name: '🇨🇭 Switzerland — #27'
-  type: vless
-  server: 46.243.205.226
-  port: 11443
-  uuid: c239f903-46f7-4564-903d-adf712c8dd0a
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  sni: shprcdn.xyz
-- name: '🇷🇺 Timeweb — #16'
-  type: vless
-  server: 185.141.227.180
-  port: 2053
-  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  tls: true
-  sni: dismissaltree.net
-- name: '🇩🇪 Germany — #39'
-  type: vless
-  server: 185.229.9.175
-  port: 443
-  uuid: 90cd15d3-26fa-4515-a67d-c76cc3659baf
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  sni: yandex.ru
-- name: '🇩🇪 Germany — #34'
-  type: vless
-  server: 188.225.62.104
-  port: 443
-  uuid: e99e1143-5f31-4f91-b2bf-86a4a1d26ff1
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  sni: eh.vk.com
-- name: '🇨🇭 Switzerland — #26'
-  type: vless
-  server: 94.139.255.254
-  port: 5443
-  uuid: c239f903-46f7-4564-903d-adf712c8dd0a
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  sni: shprcdn.net
-- name: '🇨🇭 Switzerland — #28'
-  type: vless
-  server: 45.9.24.125
-  port: 8443
-  uuid: c239f903-46f7-4564-903d-adf712c8dd0a
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  sni: an9b3d-07.p.portshaper.com
-- name: '🇷🇺 VK — #1'
-  type: vless
-  server: 78.159.246.110
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  tls: true
-  sni: fbsv6.guardora.pro
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: 78.159.246.110
-- name: '🇩🇪 Germany — #37'
-  type: vless
-  server: 87.242.94.19
-  port: 1443
-  uuid: ad176a91-c70b-4a2d-9319-5554b7d6f9ec
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  sni: edge.edgeprobe.dev
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: '🇩🇪 Germany — #48'
-  type: vless
-  server: 185.229.9.235
-  port: 43005
-  uuid: 90cd15d3-26fa-4515-a67d-c76cc3659baf
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  sni: max.ru
-- name: '🇩🇪 Germany — #43'
+- name: '🇩🇪 Germany — #35'
   type: vless
   server: 31.177.111.114
   port: 443
-  uuid: 90cd15d3-26fa-4515-a67d-c76cc3659baf
+  uuid: e9db4b82-5bdb-4518-91f7-691c44e104b7
   udp: true
   skip-cert-verify: true
   encryption: none
   sni: www.vk.com
-- name: '🇩🇪 Germany — #41'
-  type: vless
-  server: 31.177.111.114
-  port: 443
-  uuid: 90cd15d3-26fa-4515-a67d-c76cc3659baf
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  sni: yandex.ru
-- name: '🇷🇺 VK — #5'
+- name: '🇷🇺 VK — #8'
   type: vless
   server: 78.159.246.110
   port: 443
@@ -371,57 +284,44 @@ proxies:
     path: /ws
     headers:
       Host: fbsv6.guardora.pro
-- name: '🇩🇪 Germany — #36'
+- name: '🇩🇪 Germany — #32'
   type: vless
-  server: 188.225.62.104
+  server: 91.240.87.166
   port: 443
-  uuid: e99e1143-5f31-4f91-b2bf-86a4a1d26ff1
+  uuid: e9db4b82-5bdb-4518-91f7-691c44e104b7
   udp: true
   skip-cert-verify: true
   encryption: none
-  sni: yastatic.net
-- name: '🇷🇺 Timeweb — #18'
+  sni: yandex.ru
+- name: '🇩🇪 Germany — #33'
   type: vless
-  server: 185.141.227.180
-  port: 2053
-  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
+  server: 185.229.9.235
+  port: 43005
+  uuid: e9db4b82-5bdb-4518-91f7-691c44e104b7
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: max.ru
+- name: '🇩🇪 Germany — #50'
+  type: vless
+  server: 188.72.103.4
+  port: 443
+  uuid: 66bb404f-b01c-4f97-9f1b-3d546eebf289
   udp: true
   skip-cert-verify: true
   encryption: none
   tls: true
-  sni: dismissaltree.net
-- name: '🇩🇪 Germany — #30'
+  sni: cdnyan.floatingcars.net
+- name: '🇨🇭 Switzerland — #23'
   type: vless
-  server: 5.129.249.45
-  port: 9892
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  server: 46.243.205.226
+  port: 11443
+  uuid: 9d1d244a-dd7b-4095-9705-714de1e95f0e
   udp: true
   skip-cert-verify: true
   encryption: none
-  sni: dl.google.com
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: '🇷🇺 Timeweb — #22'
-  type: vless
-  server: 185.141.227.180
-  port: 2053
-  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  tls: true
-  sni: dismissaltree.net
-- name: '🇩🇪 Germany — #35'
-  type: vless
-  server: 188.225.62.104
-  port: 443
-  uuid: e99e1143-5f31-4f91-b2bf-86a4a1d26ff1
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  sni: passport.yandex.ru
-- name: '🇷🇺 VK — #3'
+  sni: shprcdn.xyz
+- name: '🇷🇺 VK — #2'
   type: vless
   server: 78.159.246.110
   port: 443
@@ -435,27 +335,45 @@ proxies:
   ws-opts:
     path: /ws
     headers:
-      Host: 78.159.246.110
-- name: '🇩🇪 Germany — #49'
+      Host: fbsv6.guardora.pro
+- name: '🇩🇪 Germany — #45'
   type: vless
-  server: 46.243.234.157
-  port: 7445
-  uuid: 90cd15d3-26fa-4515-a67d-c76cc3659baf
+  server: 185.229.9.175
+  port: 443
+  uuid: e9db4b82-5bdb-4518-91f7-691c44e104b7
   udp: true
   skip-cert-verify: true
   encryption: none
-  sni: passport.yandex.ru
-- name: '🇷🇺 Timeweb — #24'
+  sni: yandex.ru
+- name: '🇨🇭 Switzerland — #21'
   type: vless
-  server: 185.141.227.180
-  port: 2053
-  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
+  server: 94.139.255.254
+  port: 5443
+  uuid: 9d1d244a-dd7b-4095-9705-714de1e95f0e
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: shprcdn.net
+- name: '🇩🇪 Germany — #49'
+  type: vless
+  server: 188.72.103.4
+  port: 443
+  uuid: 66bb404f-b01c-4f97-9f1b-3d546eebf289
   udp: true
   skip-cert-verify: true
   encryption: none
   tls: true
-  sni: dismissaltree.net
-- name: '🇷🇺 Timeweb — #23'
+  sni: cdnyan7.floatingcars.net
+- name: '🇩🇪 Germany — #43'
+  type: vless
+  server: 91.240.87.166
+  port: 443
+  uuid: e9db4b82-5bdb-4518-91f7-691c44e104b7
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: www.vk.com
+- name: '🇷🇺 Timeweb — #16'
   type: vless
   server: 185.141.227.180
   port: 2053
@@ -475,29 +393,71 @@ proxies:
   encryption: none
   tls: true
   sni: dismissaltree.net
-- name: '🇦🇹 Austria — #25'
+- name: '🇷🇺 Timeweb — #15'
   type: vless
-  server: 185.141.227.190
-  port: 8446
-  uuid: da495553-3239-4d2b-9ded-d7c10f6896a3
+  server: 185.141.227.180
+  port: 2053
+  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
   udp: true
   skip-cert-verify: true
   encryption: none
-  sni: passport.yandex.ru
-- name: '🇩🇪 Germany — #51'
+  tls: true
+  sni: dismissaltree.net
+- name: '🇩🇪 Germany — #36'
   type: vless
-  server: 185.229.9.175
+  server: 185.229.9.234
   port: 443
-  uuid: 90cd15d3-26fa-4515-a67d-c76cc3659baf
+  uuid: e9db4b82-5bdb-4518-91f7-691c44e104b7
   udp: true
   skip-cert-verify: true
   encryption: none
-  sni: max.ru
-- name: '🇩🇪 Germany — #61'
+  sni: api.ok.ru
+- name: '🇩🇪 Germany — #27'
+  type: vless
+  server: 176.108.241.226
+  port: 9891
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: dl.google.com
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+- name: '🇩🇪 Germany — #44'
+  type: vless
+  server: 185.229.9.234
+  port: 443
+  uuid: e9db4b82-5bdb-4518-91f7-691c44e104b7
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: www.vk.com
+- name: '🇷🇺 Timeweb — #19'
+  type: vless
+  server: 185.141.227.180
+  port: 2053
+  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  tls: true
+  sni: dismissaltree.net
+- name: '🇩🇪 Germany — #52'
   type: vless
   server: 185.178.208.140
   port: 443
-  uuid: 8b78fae7-5e94-48b9-92c4-65bf85f65d3d
+  uuid: 66bb404f-b01c-4f97-9f1b-3d546eebf289
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  tls: true
+  sni: fitnesshall.org
+- name: '🇩🇪 Germany — #64'
+  type: vless
+  server: 185.178.208.140
+  port: 443
+  uuid: 66bb404f-b01c-4f97-9f1b-3d546eebf289
   udp: true
   skip-cert-verify: true
   encryption: none
@@ -508,51 +468,439 @@ proxies:
     path: /api/v3/cart/events
     headers:
       Host: fitnesshall.org
-- name: '🇩🇪 Germany — #66'
-  type: vless
-  server: 185.178.208.140
-  port: 443
-  uuid: 8b78fae7-5e94-48b9-92c4-65bf85f65d3d
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  tls: true
-  sni: fitnesshall.org
-- name: '🇮🇷 Iran — #80'
-  type: vless
-  server: 95.129.236.171
-  port: 443
-  uuid: e99e1143-5f31-4f91-b2bf-86a4a1d26ff1
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  tls: true
-  sni: my.console.pc-club.app
-- name: '🇮🇷 Iran — #81'
+- name: '🇮🇷 Iran — #83'
   type: vless
   server: 91.215.42.63
   port: 443
-  uuid: e99e1143-5f31-4f91-b2bf-86a4a1d26ff1
+  uuid: c0243f4a-bebb-4c76-b658-b40bb21c794c
   udp: true
   skip-cert-verify: true
   encryption: none
   tls: true
   sni: me.nehtar.ru
-- name: '🇩🇪 Germany — #53'
+- name: '🇮🇷 Iran — #82'
+  type: vless
+  server: 95.129.236.171
+  port: 443
+  uuid: c0243f4a-bebb-4c76-b658-b40bb21c794c
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  tls: true
+  sni: my.console.pc-club.app
+- name: '🇩🇪 Germany — #51'
   type: vless
   server: 188.72.103.4
   port: 443
-  uuid: 8b78fae7-5e94-48b9-92c4-65bf85f65d3d
+  uuid: 66bb404f-b01c-4f97-9f1b-3d546eebf289
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  tls: true
+  sni: cdnyan5.floatingcars.net
+- name: '🇩🇪 Germany — #55'
+  type: vless
+  server: 188.225.24.73
+  port: 443
+  uuid: 66bb404f-b01c-4f97-9f1b-3d546eebf289
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  tls: true
+  sni: ob1.floatingcars.net
+- name: '🇩🇪 Germany — #58'
+  type: vless
+  server: 5.178.85.132
+  port: 443
+  uuid: 66bb404f-b01c-4f97-9f1b-3d546eebf289
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  tls: true
+  sni: selbs3.luxusvpn.app
+- name: '🇩🇪 Germany — #56'
+  type: vless
+  server: 188.72.103.4
+  port: 443
+  uuid: 66bb404f-b01c-4f97-9f1b-3d546eebf289
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  tls: true
+  sni: cdnyan3.floatingcars.net
+- name: '🇬🇧 United Kingdom — #80'
+  type: vless
+  server: 31.131.251.32
+  port: 443
+  uuid: 0a0f5145-57dd-446b-8e72-0ca66faf54ca
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  tls: true
+  sni: swswp.smartnet.net.ru
+  network: ws
+  ws-opts:
+    path: /api/v1/realtime/data/socket
+    headers:
+      Host: 31.131.251.32
+- name: '🇩🇪 Germany — #54'
+  type: vless
+  server: 185.86.144.101
+  port: 443
+  uuid: 66bb404f-b01c-4f97-9f1b-3d546eebf289
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: yandex.ru
+- name: '🇬🇧 United Kingdom — #68'
+  type: vless
+  server: 185.22.235.181
+  port: 443
+  uuid: 0a0f5145-57dd-446b-8e72-0ca66faf54ca
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: smartcaptcha.yandexcloud.net
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-vk
+- name: '🇩🇪 Germany — #59'
+  type: vless
+  server: 188.72.103.4
+  port: 443
+  uuid: 66bb404f-b01c-4f97-9f1b-3d546eebf289
   udp: true
   skip-cert-verify: true
   encryption: none
   tls: true
   sni: cdnyan2.floatingcars.net
-- name: '🇸🇪 Sweden — #87'
+- name: '🇬🇧 United Kingdom — #69'
+  type: vless
+  server: 185.22.235.181
+  port: 443
+  uuid: 0a0f5145-57dd-446b-8e72-0ca66faf54ca
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: web.max.ru
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-vk
+- name: '🇬🇧 United Kingdom — #72'
+  type: vless
+  server: 185.22.235.181
+  port: 443
+  uuid: 0a0f5145-57dd-446b-8e72-0ca66faf54ca
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: api-maps.yandex.ru
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-vk
+- name: '🇩🇪 Germany — #61'
+  type: vless
+  server: 212.233.121.186
+  port: 443
+  uuid: 66bb404f-b01c-4f97-9f1b-3d546eebf289
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: yandex.ru
+- name: '🇩🇪 Germany — #53'
+  type: vless
+  server: 188.72.103.4
+  port: 443
+  uuid: 66bb404f-b01c-4f97-9f1b-3d546eebf289
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  tls: true
+  sni: cdnyan4.floatingcars.net
+- name: '🇬🇧 United Kingdom — #79'
+  type: vless
+  server: 194.55.239.113
+  port: 443
+  uuid: 0a0f5145-57dd-446b-8e72-0ca66faf54ca
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: ads.x5.ru
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-vk
+- name: '🇫🇷 France — #67'
+  type: vless
+  server: 176.109.108.244
+  port: 9880
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: dl.google.com
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+- name: '🇩🇪 Germany — #63'
+  type: vless
+  server: 188.72.103.4
+  port: 443
+  uuid: 66bb404f-b01c-4f97-9f1b-3d546eebf289
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  tls: true
+  sni: cdnyan8.floatingcars.net
+- name: '🇷🇴 Romania — #90'
+  type: vless
+  server: 188.225.76.197
+  port: 443
+  uuid: 5cb9410c-1b31-48dc-b33f-cacd93722ffd
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  tls: true
+  sni: cdn-pl-exit.extazy.net
+- name: '🇬🇧 United Kingdom — #73'
+  type: vless
+  server: 87.242.94.1
+  port: 9443
+  uuid: 0a0f5145-57dd-446b-8e72-0ca66faf54ca
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: smartcaptcha.yandexcloud.net
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-vk
+- name: '🇩🇪 Germany — #60'
+  type: vless
+  server: 46.254.18.60
+  port: 443
+  uuid: 66bb404f-b01c-4f97-9f1b-3d546eebf289
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  tls: true
+  sni: ihcbs1.luxusvpn.app
+- name: '🇬🇧 United Kingdom — #74'
+  type: vless
+  server: 185.22.235.181
+  port: 443
+  uuid: 0a0f5145-57dd-446b-8e72-0ca66faf54ca
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: sso.passport.yandex.ru
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-vk
+- name: '🇩🇪 Germany — #62'
+  type: vless
+  server: 212.233.121.169
+  port: 443
+  uuid: 66bb404f-b01c-4f97-9f1b-3d546eebf289
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: yandex.ru
+- name: '🇳🇱 The Netherlands — #86'
+  type: vless
+  server: 185.241.195.151
+  port: 9444
+  uuid: 9d1d244a-dd7b-4095-9705-714de1e95f0e
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: res.cdnguard.org
+- name: '🇩🇪 Germany — #57'
+  type: vless
+  server: 188.72.103.4
+  port: 443
+  uuid: 66bb404f-b01c-4f97-9f1b-3d546eebf289
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  tls: true
+  sni: cdnyan6.floatingcars.net
+- name: '🇬🇧 United Kingdom — #70'
+  type: vless
+  server: 194.55.239.177
+  port: 443
+  uuid: 0a0f5145-57dd-446b-8e72-0ca66faf54ca
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: sso.passport.yandex.ru
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-vk
+- name: '🇳🇴 Norway — #88'
+  type: vless
+  server: 82.148.29.250
+  port: 443
+  uuid: 2f6c70f3-206a-4bc1-ac1f-6b70153f9c73
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: unpkg.com
+- name: '🇬🇧 United Kingdom — #71'
+  type: vless
+  server: 194.55.239.113
+  port: 443
+  uuid: 0a0f5145-57dd-446b-8e72-0ca66faf54ca
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: smartcaptcha.yandexcloud.net
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-vk
+- name: '🇳🇱 The Netherlands — #84'
+  type: vless
+  server: 185.91.52.13
+  port: 30007
+  uuid: 5bba3558-ad1c-4d97-a360-7d993d503abd
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: storage.yandexcloud.net
+- name: '🇬🇧 United Kingdom — #75'
+  type: vless
+  server: 194.55.239.113
+  port: 443
+  uuid: 0a0f5145-57dd-446b-8e72-0ca66faf54ca
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: api-maps.yandex.ru
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-vk
+- name: '🇳🇱 The Netherlands — #85'
+  type: vless
+  server: 46.243.142.192
+  port: 8444
+  uuid: 398c0d5e-9bb3-490f-8e5a-1e9c606dd4ee
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: ppfu3n-01.p.portshaper.com
+  network: grpc
+  grpc-opts:
+    grpc-service-name: google.storage.v2.Storage
+- name: '🇬🇧 United Kingdom — #78'
+  type: vless
+  server: 185.22.235.63
+  port: 443
+  uuid: 0a0f5145-57dd-446b-8e72-0ca66faf54ca
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: ads.x5.ru
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-vk
+- name: '🇫🇮 Finland — #66'
+  type: vless
+  server: 46.243.232.88
+  port: 7449
+  uuid: 2690c11f-7258-43fe-aeb9-d90f93a3c317
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: passport.yandex.ru
+- name: '🇬🇧 United Kingdom — #77'
+  type: vless
+  server: 194.55.239.114
+  port: 443
+  uuid: 0a0f5145-57dd-446b-8e72-0ca66faf54ca
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: web.max.ru
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-vk
+- name: '🇫🇮 Finland — #65'
+  type: vless
+  server: 46.243.232.88
+  port: 7449
+  uuid: 2690c11f-7258-43fe-aeb9-d90f93a3c317
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: passport.yandex.ru
+- name: '🇵🇱 Poland — #89'
+  type: vless
+  server: 78.159.250.34
+  port: 8445
+  uuid: 223460d4-8f96-487e-9057-295bdedc3216
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  tls: true
+  sni: 2.26.148.147.tyr-agentstvo.tech
+  network: ws
+  ws-opts:
+    path: /websocket?ed=2560
+    headers:
+      Host: 78.159.250.34
+- name: '🇳🇱 The Netherlands — #87'
+  type: vless
+  server: 46.243.234.157
+  port: 7443
+  uuid: 9d1d244a-dd7b-4095-9705-714de1e95f0e
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: s1.cdnguard.org
+- name: '🇬🇧 United Kingdom — #81'
+  type: vless
+  server: 217.19.122.106
+  port: 10022
+  uuid: 9d2422d5-308e-43b0-94de-b0a8b135f6b8
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: 32tkm.guardora.pro
+- name: '🇬🇧 United Kingdom — #76'
+  type: vless
+  server: 185.40.153.217
+  port: 443
+  uuid: 0a0f5145-57dd-446b-8e72-0ca66faf54ca
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: ads.x5.ru
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-vk
+- name: '🇷🇴 Romania — #91'
+  type: vless
+  server: 188.225.76.197
+  port: 443
+  uuid: 5cb9410c-1b31-48dc-b33f-cacd93722ffd
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  tls: true
+  sni: cdn-pl-exit.extazy.net
+- name: '🇷🇴 Romania — #92'
+  type: vless
+  server: 188.225.76.197
+  port: 443
+  uuid: 5cb9410c-1b31-48dc-b33f-cacd93722ffd
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  tls: true
+  sni: cdn-pl-exit.extazy.net
+- name: '🇸🇪 Sweden — #96'
   type: vless
   server: 95.129.236.239
   port: 443
-  uuid: ad176a91-c70b-4a2d-9319-5554b7d6f9ec
+  uuid: f6f80841-3c87-4367-b969-290182b45b45
   udp: true
   skip-cert-verify: true
   encryption: none
@@ -563,146 +911,7 @@ proxies:
     path: /stream/615428/socket
     headers:
       Host: 3ds.login.opendns.stream
-- name: '🇩🇪 Germany — #56'
-  type: vless
-  server: 188.72.103.4
-  port: 443
-  uuid: 8b78fae7-5e94-48b9-92c4-65bf85f65d3d
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  tls: true
-  sni: cdnyan3.floatingcars.net
-- name: '🇩🇪 Germany — #67'
-  type: vless
-  server: 188.225.24.73
-  port: 443
-  uuid: 8b78fae7-5e94-48b9-92c4-65bf85f65d3d
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  tls: true
-  sni: ob1.floatingcars.net
-- name: '🇩🇪 Germany — #62'
-  type: vless
-  server: 188.225.72.20
-  port: 443
-  uuid: 8b78fae7-5e94-48b9-92c4-65bf85f65d3d
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  tls: true
-  sni: ob3.floatingcars.net
-- name: '🇬🇧 United Kingdom — #72'
-  type: vless
-  server: 185.22.235.63
-  port: 443
-  uuid: 127c304a-7109-4285-ba1c-5970422896ad
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  sni: smartcaptcha.yandexcloud.net
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-vk
-- name: '🇩🇪 Germany — #55'
-  type: vless
-  server: 46.254.18.60
-  port: 443
-  uuid: 8b78fae7-5e94-48b9-92c4-65bf85f65d3d
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  tls: true
-  sni: ihcbs1.luxusvpn.app
-- name: '🇬🇧 United Kingdom — #79'
-  type: vless
-  server: 185.22.235.63
-  port: 443
-  uuid: 127c304a-7109-4285-ba1c-5970422896ad
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  sni: ads.x5.ru
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-vk
-- name: '🇬🇧 United Kingdom — #78'
-  type: vless
-  server: 185.22.235.63
-  port: 443
-  uuid: 127c304a-7109-4285-ba1c-5970422896ad
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  sni: api-maps.yandex.ru
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-vk
-- name: '🇩🇪 Germany — #65'
-  type: vless
-  server: 188.72.103.4
-  port: 443
-  uuid: 8b78fae7-5e94-48b9-92c4-65bf85f65d3d
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  tls: true
-  sni: cdnyan.floatingcars.net
-- name: '🇬🇧 United Kingdom — #69'
-  type: vless
-  server: 217.19.122.106
-  port: 10022
-  uuid: e83ed07c-8e5b-490e-a216-94f98e2e604d
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  sni: 32tkm.guardora.pro
-- name: '🇩🇪 Germany — #54'
-  type: vless
-  server: 188.72.103.4
-  port: 443
-  uuid: 8b78fae7-5e94-48b9-92c4-65bf85f65d3d
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  tls: true
-  sni: cdnyan8.floatingcars.net
-- name: '🇬🇧 United Kingdom — #71'
-  type: vless
-  server: 194.55.239.113
-  port: 443
-  uuid: 127c304a-7109-4285-ba1c-5970422896ad
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  sni: ads.x5.ru
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-vk
-- name: '🇬🇧 United Kingdom — #74'
-  type: vless
-  server: 185.22.235.63
-  port: 443
-  uuid: 127c304a-7109-4285-ba1c-5970422896ad
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  sni: web.max.ru
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-vk
-- name: '🇩🇪 Germany — #57'
-  type: vless
-  server: 5.178.85.132
-  port: 443
-  uuid: 8b78fae7-5e94-48b9-92c4-65bf85f65d3d
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  tls: true
-  sni: selbs3.luxusvpn.app
-- name: '🇸🇪 Sweden — #85'
+- name: '🇸🇪 Sweden — #94'
   type: vless
   server: 176.108.246.58
   port: 9881
@@ -714,129 +923,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: '🇬🇧 United Kingdom — #75'
-  type: vless
-  server: 194.55.239.114
-  port: 443
-  uuid: 127c304a-7109-4285-ba1c-5970422896ad
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  sni: web.max.ru
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-vk
-- name: '🇬🇧 United Kingdom — #76'
-  type: vless
-  server: 194.55.239.177
-  port: 443
-  uuid: 127c304a-7109-4285-ba1c-5970422896ad
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  sni: smartcaptcha.yandexcloud.net
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-vk
-- name: '🇺🇸 United States — #88'
-  type: vless
-  server: 176.108.246.73
-  port: 9873
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  sni: dl.google.com
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: '🇳🇱 The Netherlands — #84'
-  type: vless
-  server: 46.243.234.157
-  port: 7443
-  uuid: c239f903-46f7-4564-903d-adf712c8dd0a
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  sni: s1.cdnguard.org
-- name: '🇩🇪 Germany — #64'
-  type: vless
-  server: 185.86.144.101
-  port: 443
-  uuid: 8b78fae7-5e94-48b9-92c4-65bf85f65d3d
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  sni: yandex.ru
-- name: '🇩🇪 Germany — #59'
-  type: vless
-  server: 188.72.103.4
-  port: 443
-  uuid: 8b78fae7-5e94-48b9-92c4-65bf85f65d3d
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  tls: true
-  sni: cdnyan4.floatingcars.net
-- name: '🇬🇧 United Kingdom — #77'
-  type: vless
-  server: 185.22.235.181
-  port: 443
-  uuid: 127c304a-7109-4285-ba1c-5970422896ad
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  sni: sso.passport.yandex.ru
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-vk
-- name: '🇩🇪 Germany — #60'
-  type: vless
-  server: 188.72.103.4
-  port: 443
-  uuid: 8b78fae7-5e94-48b9-92c4-65bf85f65d3d
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  tls: true
-  sni: cdnyan6.floatingcars.net
-- name: '🇬🇧 United Kingdom — #73'
-  type: vless
-  server: 194.55.239.177
-  port: 443
-  uuid: 127c304a-7109-4285-ba1c-5970422896ad
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  sni: api-maps.yandex.ru
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-vk
-- name: '🇳🇱 The Netherlands — #82'
-  type: vless
-  server: 46.243.142.192
-  port: 8444
-  uuid: ee2eff96-5fa9-4e21-a26e-1a57ce84fa49
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  sni: ppfu3n-01.p.portshaper.com
-  network: grpc
-  grpc-opts:
-    grpc-service-name: google.storage.v2.Storage
-- name: '🇬🇧 United Kingdom — #70'
-  type: vless
-  server: 194.55.239.177
-  port: 443
-  uuid: 127c304a-7109-4285-ba1c-5970422896ad
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  sni: sso.passport.yandex.ru
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-vk
-- name: '🇸🇪 Sweden — #86'
+- name: '🇸🇪 Sweden — #93'
   type: vless
   server: 176.108.246.110
   port: 9830
@@ -848,45 +935,43 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: '🇳🇱 The Netherlands — #83'
+- name: '🇸🇪 Sweden — #95'
   type: vless
-  server: 185.241.195.151
-  port: 9444
-  uuid: c239f903-46f7-4564-903d-adf712c8dd0a
+  server: 45.132.176.134
+  port: 9881
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
   udp: true
   skip-cert-verify: true
   encryption: none
-  sni: res.cdnguard.org
-- name: '🇩🇪 Germany — #52'
+  sni: dl.google.com
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+- name: '🇸🇪 Sweden — #97'
   type: vless
-  server: 91.240.87.166
-  port: 443
-  uuid: 90cd15d3-26fa-4515-a67d-c76cc3659baf
+  server: 87.242.94.28
+  port: 1443
+  uuid: f6f80841-3c87-4367-b969-290182b45b45
   udp: true
   skip-cert-verify: true
   encryption: none
-  sni: yandex.ru
-- name: '🇩🇪 Germany — #58'
+  sni: edge.edgeprobe.dev
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: '🇺🇸 United States — #98'
   type: vless
-  server: 188.72.103.4
-  port: 443
-  uuid: 8b78fae7-5e94-48b9-92c4-65bf85f65d3d
+  server: 176.108.246.73
+  port: 9873
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
   udp: true
   skip-cert-verify: true
   encryption: none
-  tls: true
-  sni: cdnyan7.floatingcars.net
-- name: '🇩🇪 Germany — #63'
-  type: vless
-  server: 188.72.103.4
-  port: 443
-  uuid: 8b78fae7-5e94-48b9-92c4-65bf85f65d3d
-  udp: true
-  skip-cert-verify: true
-  encryption: none
-  tls: true
-  sni: cdnyan5.floatingcars.net
-- name: '🇷🇺 Beget — #13'
+  sni: dl.google.com
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+- name: '🇷🇺 Beget — #11'
   type: vless
   server: 45.12.75.242
   port: 26424
@@ -895,7 +980,7 @@ proxies:
   skip-cert-verify: true
   encryption: none
   sni: ya.ru
-- name: '🇷🇺 Beget — #10'
+- name: '🇷🇺 Beget — #9'
   type: vless
   server: 45.12.75.242
   port: 26424
@@ -913,7 +998,7 @@ proxies:
   skip-cert-verify: true
   encryption: none
   sni: ya.ru
-- name: '🇷🇺 Beget — #11'
+- name: '🇷🇺 Beget — #10'
   type: vless
   server: 45.12.75.242
   port: 26424
@@ -922,7 +1007,43 @@ proxies:
   skip-cert-verify: true
   encryption: none
   sni: ya.ru
-- name: '🇷🇺 Timeweb — #19'
+- name: '🇩🇪 Germany — #29'
+  type: vless
+  server: 188.225.62.104
+  port: 443
+  uuid: c0243f4a-bebb-4c76-b658-b40bb21c794c
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: yastatic.net
+- name: '🇩🇪 Germany — #28'
+  type: vless
+  server: 188.225.62.104
+  port: 443
+  uuid: c0243f4a-bebb-4c76-b658-b40bb21c794c
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: passport.yandex.ru
+- name: '🇩🇪 Germany — #31'
+  type: vless
+  server: 188.225.62.104
+  port: 443
+  uuid: c0243f4a-bebb-4c76-b658-b40bb21c794c
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: eh.vk.com
+- name: '🇩🇪 Germany — #30'
+  type: vless
+  server: 188.225.62.104
+  port: 443
+  uuid: c0243f4a-bebb-4c76-b658-b40bb21c794c
+  udp: true
+  skip-cert-verify: true
+  encryption: none
+  sni: max.ru
+- name: '🇷🇺 Timeweb — #17'
   type: vless
   server: 185.141.227.180
   port: 2053
@@ -936,185 +1057,207 @@ proxy-groups:
 - name: 🚀 Авто-выбор
   type: url-test
   proxies:
-  - '🇩🇪 Germany — #42'
-  - '🇩🇪 Germany — #31'
-  - '🇩🇪 Germany — #32'
-  - '🇷🇺 Timeweb — #17'
-  - '🇷🇺 VK — #9'
-  - '🇩🇪 Germany — #40'
   - '🇩🇪 Germany — #38'
+  - '🇩🇪 Germany — #26'
+  - '🇩🇪 Germany — #47'
+  - '🇷🇺 VK — #7'
+  - '🇷🇺 Timeweb — #13'
+  - '🇩🇪 Germany — #42'
+  - '🇩🇪 Germany — #46'
+  - '🇷🇺 VK — #4'
+  - '🇩🇪 Germany — #24'
+  - '🇷🇺 VK — #5'
+  - '🇩🇪 Germany — #37'
+  - '🇩🇪 Germany — #25'
+  - '🇩🇪 Germany — #39'
+  - '🇷🇺 VK — #3'
+  - '🇩🇪 Germany — #34'
+  - '🇩🇪 Germany — #48'
+  - '🇩🇪 Germany — #40'
+  - '🇩🇪 Germany — #41'
+  - '🇨🇭 Switzerland — #22'
+  - '🇷🇺 VK — #1'
+  - '🇷🇺 Timeweb — #18'
+  - '🇷🇺 VK — #6'
+  - '🇷🇺 Timeweb — #14'
+  - '🇩🇪 Germany — #35'
+  - '🇷🇺 VK — #8'
+  - '🇩🇪 Germany — #32'
+  - '🇩🇪 Germany — #33'
   - '🇩🇪 Germany — #50'
+  - '🇨🇭 Switzerland — #23'
   - '🇷🇺 VK — #2'
   - '🇩🇪 Germany — #45'
-  - '🇩🇪 Germany — #44'
-  - '🇷🇺 VK — #8'
-  - '🇷🇺 VK — #4'
-  - '🇷🇺 Timeweb — #14'
-  - '🇷🇺 Timeweb — #21'
-  - '🇩🇪 Germany — #47'
-  - '🇷🇺 Timeweb — #15'
-  - '🇷🇺 VK — #7'
-  - '🇩🇪 Germany — #33'
-  - '🇷🇺 VK — #6'
-  - '🇩🇪 Germany — #29'
-  - '🇩🇪 Germany — #46'
-  - '🇨🇭 Switzerland — #27'
-  - '🇷🇺 Timeweb — #16'
-  - '🇩🇪 Germany — #39'
-  - '🇩🇪 Germany — #34'
-  - '🇨🇭 Switzerland — #26'
-  - '🇨🇭 Switzerland — #28'
-  - '🇷🇺 VK — #1'
-  - '🇩🇪 Germany — #37'
-  - '🇩🇪 Germany — #48'
-  - '🇩🇪 Germany — #43'
-  - '🇩🇪 Germany — #41'
-  - '🇷🇺 VK — #5'
-  - '🇩🇪 Germany — #36'
-  - '🇷🇺 Timeweb — #18'
-  - '🇩🇪 Germany — #30'
-  - '🇷🇺 Timeweb — #22'
-  - '🇩🇪 Germany — #35'
-  - '🇷🇺 VK — #3'
+  - '🇨🇭 Switzerland — #21'
   - '🇩🇪 Germany — #49'
-  - '🇷🇺 Timeweb — #24'
-  - '🇷🇺 Timeweb — #23'
+  - '🇩🇪 Germany — #43'
+  - '🇷🇺 Timeweb — #16'
   - '🇷🇺 Timeweb — #20'
-  - '🇦🇹 Austria — #25'
-  - '🇩🇪 Germany — #51'
-  - '🇩🇪 Germany — #61'
-  - '🇩🇪 Germany — #66'
-  - '🇮🇷 Iran — #80'
-  - '🇮🇷 Iran — #81'
-  - '🇩🇪 Germany — #53'
-  - '🇸🇪 Sweden — #87'
-  - '🇩🇪 Germany — #56'
-  - '🇩🇪 Germany — #67'
-  - '🇩🇪 Germany — #62'
-  - '🇬🇧 United Kingdom — #72'
-  - '🇩🇪 Germany — #55'
-  - '🇬🇧 United Kingdom — #79'
-  - '🇬🇧 United Kingdom — #78'
-  - '🇩🇪 Germany — #65'
-  - '🇬🇧 United Kingdom — #69'
-  - '🇩🇪 Germany — #54'
-  - '🇬🇧 United Kingdom — #71'
-  - '🇬🇧 United Kingdom — #74'
-  - '🇩🇪 Germany — #57'
-  - '🇸🇪 Sweden — #85'
-  - '🇬🇧 United Kingdom — #75'
-  - '🇬🇧 United Kingdom — #76'
-  - '🇺🇸 United States — #88'
-  - '🇳🇱 The Netherlands — #84'
-  - '🇩🇪 Germany — #64'
-  - '🇩🇪 Germany — #59'
-  - '🇬🇧 United Kingdom — #77'
-  - '🇩🇪 Germany — #60'
-  - '🇬🇧 United Kingdom — #73'
-  - '🇳🇱 The Netherlands — #82'
-  - '🇬🇧 United Kingdom — #70'
-  - '🇸🇪 Sweden — #86'
-  - '🇳🇱 The Netherlands — #83'
-  - '🇩🇪 Germany — #52'
-  - '🇩🇪 Germany — #58'
-  - '🇩🇪 Germany — #63'
-  - '🇷🇺 Beget — #13'
-  - '🇷🇺 Beget — #10'
-  - '🇷🇺 Beget — #12'
-  - '🇷🇺 Beget — #11'
+  - '🇷🇺 Timeweb — #15'
+  - '🇩🇪 Germany — #36'
+  - '🇩🇪 Germany — #27'
+  - '🇩🇪 Germany — #44'
   - '🇷🇺 Timeweb — #19'
+  - '🇩🇪 Germany — #52'
+  - '🇩🇪 Germany — #64'
+  - '🇮🇷 Iran — #83'
+  - '🇮🇷 Iran — #82'
+  - '🇩🇪 Germany — #51'
+  - '🇩🇪 Germany — #55'
+  - '🇩🇪 Germany — #58'
+  - '🇩🇪 Germany — #56'
+  - '🇬🇧 United Kingdom — #80'
+  - '🇩🇪 Germany — #54'
+  - '🇬🇧 United Kingdom — #68'
+  - '🇩🇪 Germany — #59'
+  - '🇬🇧 United Kingdom — #69'
+  - '🇬🇧 United Kingdom — #72'
+  - '🇩🇪 Germany — #61'
+  - '🇩🇪 Germany — #53'
+  - '🇬🇧 United Kingdom — #79'
+  - '🇫🇷 France — #67'
+  - '🇩🇪 Germany — #63'
+  - '🇷🇴 Romania — #90'
+  - '🇬🇧 United Kingdom — #73'
+  - '🇩🇪 Germany — #60'
+  - '🇬🇧 United Kingdom — #74'
+  - '🇩🇪 Germany — #62'
+  - '🇳🇱 The Netherlands — #86'
+  - '🇩🇪 Germany — #57'
+  - '🇬🇧 United Kingdom — #70'
+  - '🇳🇴 Norway — #88'
+  - '🇬🇧 United Kingdom — #71'
+  - '🇳🇱 The Netherlands — #84'
+  - '🇬🇧 United Kingdom — #75'
+  - '🇳🇱 The Netherlands — #85'
+  - '🇬🇧 United Kingdom — #78'
+  - '🇫🇮 Finland — #66'
+  - '🇬🇧 United Kingdom — #77'
+  - '🇫🇮 Finland — #65'
+  - '🇵🇱 Poland — #89'
+  - '🇳🇱 The Netherlands — #87'
+  - '🇬🇧 United Kingdom — #81'
+  - '🇬🇧 United Kingdom — #76'
+  - '🇷🇴 Romania — #91'
+  - '🇷🇴 Romania — #92'
+  - '🇸🇪 Sweden — #96'
+  - '🇸🇪 Sweden — #94'
+  - '🇸🇪 Sweden — #93'
+  - '🇸🇪 Sweden — #95'
+  - '🇸🇪 Sweden — #97'
+  - '🇺🇸 United States — #98'
+  - '🇷🇺 Beget — #11'
+  - '🇷🇺 Beget — #9'
+  - '🇷🇺 Beget — #12'
+  - '🇷🇺 Beget — #10'
+  - '🇩🇪 Germany — #29'
+  - '🇩🇪 Germany — #28'
+  - '🇩🇪 Germany — #31'
+  - '🇩🇪 Germany — #30'
+  - '🇷🇺 Timeweb — #17'
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: 🌍 Прокси
   type: select
   proxies:
   - 🚀 Авто-выбор
-  - '🇩🇪 Germany — #42'
-  - '🇩🇪 Germany — #31'
-  - '🇩🇪 Germany — #32'
-  - '🇷🇺 Timeweb — #17'
-  - '🇷🇺 VK — #9'
-  - '🇩🇪 Germany — #40'
   - '🇩🇪 Germany — #38'
+  - '🇩🇪 Germany — #26'
+  - '🇩🇪 Germany — #47'
+  - '🇷🇺 VK — #7'
+  - '🇷🇺 Timeweb — #13'
+  - '🇩🇪 Germany — #42'
+  - '🇩🇪 Germany — #46'
+  - '🇷🇺 VK — #4'
+  - '🇩🇪 Germany — #24'
+  - '🇷🇺 VK — #5'
+  - '🇩🇪 Germany — #37'
+  - '🇩🇪 Germany — #25'
+  - '🇩🇪 Germany — #39'
+  - '🇷🇺 VK — #3'
+  - '🇩🇪 Germany — #34'
+  - '🇩🇪 Germany — #48'
+  - '🇩🇪 Germany — #40'
+  - '🇩🇪 Germany — #41'
+  - '🇨🇭 Switzerland — #22'
+  - '🇷🇺 VK — #1'
+  - '🇷🇺 Timeweb — #18'
+  - '🇷🇺 VK — #6'
+  - '🇷🇺 Timeweb — #14'
+  - '🇩🇪 Germany — #35'
+  - '🇷🇺 VK — #8'
+  - '🇩🇪 Germany — #32'
+  - '🇩🇪 Germany — #33'
   - '🇩🇪 Germany — #50'
+  - '🇨🇭 Switzerland — #23'
   - '🇷🇺 VK — #2'
   - '🇩🇪 Germany — #45'
-  - '🇩🇪 Germany — #44'
-  - '🇷🇺 VK — #8'
-  - '🇷🇺 VK — #4'
-  - '🇷🇺 Timeweb — #14'
-  - '🇷🇺 Timeweb — #21'
-  - '🇩🇪 Germany — #47'
-  - '🇷🇺 Timeweb — #15'
-  - '🇷🇺 VK — #7'
-  - '🇩🇪 Germany — #33'
-  - '🇷🇺 VK — #6'
-  - '🇩🇪 Germany — #29'
-  - '🇩🇪 Germany — #46'
-  - '🇨🇭 Switzerland — #27'
-  - '🇷🇺 Timeweb — #16'
-  - '🇩🇪 Germany — #39'
-  - '🇩🇪 Germany — #34'
-  - '🇨🇭 Switzerland — #26'
-  - '🇨🇭 Switzerland — #28'
-  - '🇷🇺 VK — #1'
-  - '🇩🇪 Germany — #37'
-  - '🇩🇪 Germany — #48'
-  - '🇩🇪 Germany — #43'
-  - '🇩🇪 Germany — #41'
-  - '🇷🇺 VK — #5'
-  - '🇩🇪 Germany — #36'
-  - '🇷🇺 Timeweb — #18'
-  - '🇩🇪 Germany — #30'
-  - '🇷🇺 Timeweb — #22'
-  - '🇩🇪 Germany — #35'
-  - '🇷🇺 VK — #3'
+  - '🇨🇭 Switzerland — #21'
   - '🇩🇪 Germany — #49'
-  - '🇷🇺 Timeweb — #24'
-  - '🇷🇺 Timeweb — #23'
+  - '🇩🇪 Germany — #43'
+  - '🇷🇺 Timeweb — #16'
   - '🇷🇺 Timeweb — #20'
-  - '🇦🇹 Austria — #25'
-  - '🇩🇪 Germany — #51'
-  - '🇩🇪 Germany — #61'
-  - '🇩🇪 Germany — #66'
-  - '🇮🇷 Iran — #80'
-  - '🇮🇷 Iran — #81'
-  - '🇩🇪 Germany — #53'
-  - '🇸🇪 Sweden — #87'
-  - '🇩🇪 Germany — #56'
-  - '🇩🇪 Germany — #67'
-  - '🇩🇪 Germany — #62'
-  - '🇬🇧 United Kingdom — #72'
-  - '🇩🇪 Germany — #55'
-  - '🇬🇧 United Kingdom — #79'
-  - '🇬🇧 United Kingdom — #78'
-  - '🇩🇪 Germany — #65'
-  - '🇬🇧 United Kingdom — #69'
-  - '🇩🇪 Germany — #54'
-  - '🇬🇧 United Kingdom — #71'
-  - '🇬🇧 United Kingdom — #74'
-  - '🇩🇪 Germany — #57'
-  - '🇸🇪 Sweden — #85'
-  - '🇬🇧 United Kingdom — #75'
-  - '🇬🇧 United Kingdom — #76'
-  - '🇺🇸 United States — #88'
-  - '🇳🇱 The Netherlands — #84'
-  - '🇩🇪 Germany — #64'
-  - '🇩🇪 Germany — #59'
-  - '🇬🇧 United Kingdom — #77'
-  - '🇩🇪 Germany — #60'
-  - '🇬🇧 United Kingdom — #73'
-  - '🇳🇱 The Netherlands — #82'
-  - '🇬🇧 United Kingdom — #70'
-  - '🇸🇪 Sweden — #86'
-  - '🇳🇱 The Netherlands — #83'
-  - '🇩🇪 Germany — #52'
-  - '🇩🇪 Germany — #58'
-  - '🇩🇪 Germany — #63'
-  - '🇷🇺 Beget — #13'
-  - '🇷🇺 Beget — #10'
-  - '🇷🇺 Beget — #12'
-  - '🇷🇺 Beget — #11'
+  - '🇷🇺 Timeweb — #15'
+  - '🇩🇪 Germany — #36'
+  - '🇩🇪 Germany — #27'
+  - '🇩🇪 Germany — #44'
   - '🇷🇺 Timeweb — #19'
+  - '🇩🇪 Germany — #52'
+  - '🇩🇪 Germany — #64'
+  - '🇮🇷 Iran — #83'
+  - '🇮🇷 Iran — #82'
+  - '🇩🇪 Germany — #51'
+  - '🇩🇪 Germany — #55'
+  - '🇩🇪 Germany — #58'
+  - '🇩🇪 Germany — #56'
+  - '🇬🇧 United Kingdom — #80'
+  - '🇩🇪 Germany — #54'
+  - '🇬🇧 United Kingdom — #68'
+  - '🇩🇪 Germany — #59'
+  - '🇬🇧 United Kingdom — #69'
+  - '🇬🇧 United Kingdom — #72'
+  - '🇩🇪 Germany — #61'
+  - '🇩🇪 Germany — #53'
+  - '🇬🇧 United Kingdom — #79'
+  - '🇫🇷 France — #67'
+  - '🇩🇪 Germany — #63'
+  - '🇷🇴 Romania — #90'
+  - '🇬🇧 United Kingdom — #73'
+  - '🇩🇪 Germany — #60'
+  - '🇬🇧 United Kingdom — #74'
+  - '🇩🇪 Germany — #62'
+  - '🇳🇱 The Netherlands — #86'
+  - '🇩🇪 Germany — #57'
+  - '🇬🇧 United Kingdom — #70'
+  - '🇳🇴 Norway — #88'
+  - '🇬🇧 United Kingdom — #71'
+  - '🇳🇱 The Netherlands — #84'
+  - '🇬🇧 United Kingdom — #75'
+  - '🇳🇱 The Netherlands — #85'
+  - '🇬🇧 United Kingdom — #78'
+  - '🇫🇮 Finland — #66'
+  - '🇬🇧 United Kingdom — #77'
+  - '🇫🇮 Finland — #65'
+  - '🇵🇱 Poland — #89'
+  - '🇳🇱 The Netherlands — #87'
+  - '🇬🇧 United Kingdom — #81'
+  - '🇬🇧 United Kingdom — #76'
+  - '🇷🇴 Romania — #91'
+  - '🇷🇴 Romania — #92'
+  - '🇸🇪 Sweden — #96'
+  - '🇸🇪 Sweden — #94'
+  - '🇸🇪 Sweden — #93'
+  - '🇸🇪 Sweden — #95'
+  - '🇸🇪 Sweden — #97'
+  - '🇺🇸 United States — #98'
+  - '🇷🇺 Beget — #11'
+  - '🇷🇺 Beget — #9'
+  - '🇷🇺 Beget — #12'
+  - '🇷🇺 Beget — #10'
+  - '🇩🇪 Germany — #29'
+  - '🇩🇪 Germany — #28'
+  - '🇩🇪 Germany — #31'
+  - '🇩🇪 Germany — #30'
+  - '🇷🇺 Timeweb — #17'
 rules:
 - MATCH,🌍 Прокси
